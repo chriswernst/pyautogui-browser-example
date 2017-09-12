@@ -3,6 +3,13 @@
 """
 Created on Wed Aug 30 21:35:30 2017
 
+The following is a very simple example of how the pyautogui library works and is intended for use Mac OSX and Chrome
+(due to using featuring such as spotlight)
+
+For a full list of keyboard strings pyautogui will accept, use pyautogui.KEYBOARD_KEYS
+
+For documentation, visit: http://pyautogui.readthedocs.io/
+
 @author: ChrisErnst
 """
 
@@ -16,7 +23,7 @@ pag.FAILSAFE = True
 
 
 pag.hotkey('command', 'space')
-# Opens Spotlight
+# Opens OSX Spotlight
 
 pag.typewrite('chrome')
 # Types Chrome
@@ -26,7 +33,7 @@ pag.press('enter')
 # selects chrome
 time.sleep(1)
 
-for i in range(1000):
+for i in range(1):
     
     pag.hotkey('command', 't')
     
